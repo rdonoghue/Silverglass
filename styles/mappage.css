@@ -1,0 +1,29 @@
+.mapholder {
+  display: grid;
+  grid-template-columns: calc(100% - 15rem) auto;
+  grid-template-rows: auto;
+  gap: 1rem;
+  border: 2px solid green;
+  margin: 1rem;
+  gap: 1rem;
+}
+.mapcontent {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem 0 2rem;
+  width: calc(100% - 15rem);
+  border: 3px solid red;
+}
+
+.gamemap {
+  width: 100%;
+  height: auto;
+}
+
+.showmap {
+  /* background-color: var(--color2); */
+  width: 100%;
+  height: auto;
+  background-image: url("/assets/ShiningSea1500.png");
+  object-fit: contain;
+}

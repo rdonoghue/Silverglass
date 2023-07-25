@@ -1,0 +1,258 @@
+  <div class="mapholder">
+        <div>
+          <p><img src="./assets/ShiningSea1500.png" /></p>
+        </div>
+        <div>
+          <p></p>
+          <h3>Contents</h3>
+          <ul>
+            <li>Silverglass</li>
+            <li>The Skyfire Emirates</li>
+            <li>The Border Kingdom</li>
+            <li>The Lake of Steam</li>
+            <li>Shar</li>
+            <li>Chult</li>
+            <li>The Shining Sea</li>
+            <li>Halruua</li>
+            <li>Tethyr</li>
+            <li>Amn</li>
+            <li>The Thornwood</li>
+            <li>Erlkazar</li>
+            <li>Velen</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mapholder">
+        <div class="gamemap">
+          <p><img src="./assets/ShiningSea1500.png" /></p>
+        </div>
+        <div class="contents">
+          <p></p>
+          <h3>Contents</h3>
+          <ul>
+            <li>Silverglass</li>
+            <li>The Skyfire Emirates</li>
+            <li>The Border Kingdom</li>
+            <li>The Lake of Steam</li>
+            <li>Shar</li>
+            <li>Chult</li>
+            <li>The Shining Sea</li>
+            <li>Halruua</li>
+            <li>Tethyr</li>
+            <li>Amn</li>
+            <li>The Thornwood</li>
+            <li>Erlkazar</li>
+            <li>Velen</li>
+          </ul>
+        </div>
+      </div>
+
+
+      header {
+  font-family: "Nanum Myeongjo", serif;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px 60px;
+  align-items: center;
+  justify-content: space-between;
+  /* position: absolute; */
+  margin-bottom: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(22, 22, 22, 0.4);
+}
+
+p {
+  margin: 0.5rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-left: 20px;
+}
+
+header li:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+header .active {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:visited {
+  color: var(--color4);
+}
+
+header a {
+  color: var(--color4);
+}
+
+.bigtitle {
+  margin: 0 2rem;
+  box-sizing: border-box;
+
+  border: 2px solid pink;
+}
+
+h1,
+h2 {
+  font-family: "Aboreto", cursive;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+a {
+  color: lightblue;
+}
+
+a:active {
+  color: violet;
+}
+
+a:visited {
+  color: skyblue;
+}
+
+.centercolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger {
+  /* visibility: hidden; */
+  display: none;
+  cursor: pointer;
+}
+.menuburger {
+  height: 2rem;
+  width: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.trump-button {
+  cursor: pointer;
+}
+
+.col3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1rem;
+}
+
+.col {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.highlightbox {
+  font-family: "Jost", sans-serif;
+  display: block;
+  width: 100%;
+  background-color: var(--color-light);
+  color: var(--color1);
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  header ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    padding: 1ch;
+    left: calc(1rem);
+    width: 20rem;
+    flex-direction: column;
+    background-color: rgb(62, 18, 22);
+    z-index: 100;
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  header .active {
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+  main {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 20px auto;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header li {
+    font-size: 1rem;
+    padding-right: 4px;
+    padding-left: 4px;
+
+    margin-left: 5px;
+  }
+}
