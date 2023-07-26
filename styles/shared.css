@@ -7,6 +7,7 @@
   --background-color-shift: rgb(68, 100, 113);
   --color-light: rgb(160, 226, 219);
   --color-dark: rgb(44, 57, 66);
+  --color-text: rgb(245, 245, 245);
 
   --color2: rgb(42, 157, 143);
   --color3: rgb(233, 196, 106);
@@ -16,7 +17,7 @@
 
 body {
   font-family: "Nanum Myeongjo", serif;
-  color: whitesmoke;
+  color: var(--color-text);
   font-size: 1.15rem;
   line-height: 1.75rem;
   background: linear-gradient(
@@ -231,7 +232,7 @@ button {
 }
 
 .charimage {
-  outline: #4caf50 solid 2px;
+  border: 0;
 }
 
 .contentcards .grid :nth-child(odd) {
@@ -249,6 +250,7 @@ button {
 .imagescale {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .charname {
@@ -331,7 +333,7 @@ button {
 }
 
 .hiddencontent {
-  padding: 0 18px;
+  padding: 0 1rem;
   display: none;
   overflow: hidden;
 }
@@ -344,13 +346,13 @@ button {
   /* flex-wrap: wrap; */
 }
 
-.detailcards li::first-line {
+/* .detailcards div::first-line {
   display: block;
   font-weight: 900;
   font-size: 1.55rem;
-}
+} */
 
-.detailcards li {
+.detailcards div {
   border: 0.5px solid black;
   border-radius: 5px;
   padding: 1ch;
@@ -395,6 +397,70 @@ button {
 .thumbnailgrid2 div:hover {
   background-color: var(--color-dark);
 }
+.cardgallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5rem 0 5rem;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.cardandsub {
+  width: 18rem;
+}
+
+.infocard {
+  width: 100%;
+  border: 12px solid var(--color-dark);
+  border-radius: 8px;
+  background-color: var(--background-color-shift);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.infocard:hover {
+  scale: 1.25;
+  transform-origin: bottom;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardname {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* height: 3rem; */
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cardsubtitle {
+  font-size: 1rem;
+  margin: 0;
+  height: 4rem;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.cardimage {
+  width: 100%;
+  height: auto;
+}
+
+.cardblurb {
+  padding: 1rem;
+  width: 100%;
+}
+
+.showme {
+  min-height: 2rem;
+  min-width: 4rem;
+  background-color: azure;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  padding: 1ch;
+  margin: 1ch;
+}
+
 @media (max-width: 767.98px) {
   header {
     padding: 0;
