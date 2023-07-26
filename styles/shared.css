@@ -365,6 +365,7 @@ button {
   margin: 1rem;
   align-items: start;
   text-align: center;
+  font-family: "Jost", sans-serif;
 }
 .thumbnailgrid div {
   padding-bottom: 1rem;
@@ -374,6 +375,25 @@ button {
   background-color: var(--color-dark);
 }
 
+.thumbnailgrid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  width: 20rem;
+  margin: 1rem;
+  align-items: start;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+.thumbnailgrid2 div {
+  padding-bottom: 1rem;
+}
+
+.thumbnailgrid2 div:hover {
+  background-color: var(--color-dark);
+}
 @media (max-width: 767.98px) {
   header {
     padding: 0;
