@@ -253,6 +253,7 @@ button {
 .charname {
   font-weight: 700;
   font-size: 3rem;
+  margin-top: 1rem;
   padding: 1rem;
   grid-column: span 2;
   background-color: var(--color-dark);
