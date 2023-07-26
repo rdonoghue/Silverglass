@@ -30,6 +30,7 @@ body {
 
 b {
   font-weight: 900;
+  color: var(--color3);
 }
 
 header {
