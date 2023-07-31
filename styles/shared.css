@@ -6,6 +6,7 @@
   --background-color: rgb(38, 70, 83);
   --background-color-shift: rgb(68, 100, 113);
   --color-light: rgb(160, 226, 219);
+  --color-pale: rgb(209, 224, 222);
   --color-dark: rgb(44, 57, 66);
   --color-text: rgb(245, 245, 245);
 
@@ -461,21 +462,101 @@ button {
   margin: 1ch;
 }
 
-
 .monsterblock {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 1rem;
   column-gap: 0.5rem;
   margin: 2rem;
   align-items: start;
+  font-family: "Jost", sans-serif;
+  background-color: var(--color-pale);
+  color: var(--color-dark);
+  font-size: 0.9rem;
+  padding: 1ch;
+  border-radius: 5px;
+}
+
+.monstername,
+.itemname {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.keywords {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.monsterblock b {
+  color: var(--color5);
+}
+
+.monsterblock div {
+  border: 0;
+}
+
+.whitebar {
+  height: 3px;
+  background-color: var(--color-pale);
+}
+
+.dividerbar {
+  margin: 0;
+  padding: 0;
+  /* background-color: pink; */
+  background-image: url(/assets/wedge.svg);
+  background-size: cover;
+  height: 5px;
+}
+
+.magicitem {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  margin: 2rem;
+  align-items: start;
+  font-family: "Jost", sans-serif;
+  background-color: var(--color-pale);
+  color: var(--color-dark);
+  font-size: 0.9rem;
+  padding: 1ch;
+  border-radius: 5px;
+}
+
+.stretch {
+  max-width: 90%;
+  min-height: 4px;
+  margin: 0 auto 0 auto;
+  /* padding: 0; */
+}
+
+.compact {
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+  height: 1.5rem;
+  justify-content: center;
+}
+
+.description {
+  grid-column-end: span 3;
+}
+.statblock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  align-items: start;
   text-align: center;
   font-family: "Jost", sans-serif;
-  background-color: var(--color-light);
+  background-color: var(--color-pale);
   color: var(--color-dark);
-
-
 }
 
 @media (max-width: 767.98px) {
