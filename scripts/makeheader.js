@@ -9,7 +9,7 @@ const headerContent = `
 
 <ul id="navigator">
 <li><a href="index.html">About</a></li>
-<li><a href="chargen.html">Rules</a></li>
+<li><a href="rules.html">Rules</a></li>
 <li><a href="shiningsea.html">The Shining Sea</a></li>
 <li><a href="silverglass.html">Cities of Silverglass</a></li>
 <li><a href="pcs.html">Characters</a></li>
