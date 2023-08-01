@@ -351,14 +351,14 @@ button {
 /* MOBILE */
 
 .hamburger {
-  /* visibility: hidden; */
-  display: none;
+display: none;
   cursor: pointer;
+  height: 2.5rem;
+ 
 }
 .menuburger {
- height: 2.5rem;
-  width: 2.5rem; 
 /*  padding: 0.5ch; */
+height: 2.5rem;
 }
 
 .hidden {
