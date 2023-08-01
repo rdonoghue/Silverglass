@@ -12,17 +12,18 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/contentpage.css" />
+
 
     <script src="scripts/makeheader.js" type="module" defer></script>
     <script src="scripts/shared.js" type="module" defer></script>
   </head>
-  <body tag="">
+  <body>
     <header></header>
     <div class="bigtitle">Streets of Silverglass: Rules Content</div>
     <main>
-      <div class="contentholder">
-        <div class="content">
+        <div class="article">
           <h1 id="chargen">Character Creation</h1>
           <h2 id="stats">Stats</h2>
           <p>
@@ -242,7 +243,7 @@
           </ul>
 
           <h1 id="monsters">Monsters</h1>
-          <div class="monsterblock" id="koyu">
+          <div class="col3 monsterblock" id="koyu">
             <div>
               <p class="monstername">Koyu</p>
               <p class="keywords">Medium Construct, Lawful Neutral</p>
@@ -335,7 +336,7 @@
             </div>
           </div>
 
-          <div class="monsterblock" id="greaterkoyu">
+          <div class="col3 monsterblock" id="greaterkoyu">
             <div>
               <p class="monstername">Koyu, Greater</p>
               <p class="keywords">Medium Construct, Lawful Neutral</p>
@@ -417,7 +418,7 @@
           <h2 id="slipstream">Mask of the Slipstream</h2>
           <h4>Wondrous item, legendary (requires attunement)</h4>
           <div class="whitebar"></div>
-          <div class="magicitem">
+          <div class="magicitem col2">
             <div>
               <p>
                 A blue lacquer full face mask with stars on is surface. The
@@ -468,7 +469,8 @@
             <div><img src="assets/bluemask.png" class="imagescale" /></div>
           </div>
         </div>
-        <div class="tocholder">
+      </article>
+        <nav class="tocholder">
           <div class="toc">
             <h3><a href="#chargen">Chargen</a></h3>
             <ul>
@@ -489,9 +491,9 @@
             <ul>
               <li><a href="#slipsteam">Mask of the Slipstream</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </nav>
+
+
     </main>
   </body>
 </html>

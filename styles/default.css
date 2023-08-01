@@ -28,14 +28,14 @@ body {
     var(--background-color),
     var(--background-color-shift)
   );
-  display: flex;
-  flex-direction: column;
 }
 
 b {
   font-weight: 900;
   color: var(--color3);
 }
+
+/* HEADER  */
 
 header {
   font-family: "Nanum Myeongjo", serif;
@@ -55,17 +55,6 @@ header {
   background-color: rgb(22, 22, 22, 0.4);
 }
 
-p {
-  margin: 0.5rem;
-}
-
-ul {
-  list-style: disc;
-  padding-left: 2rem;
-  padding-bottom: 1rem;
-}
-
-/* HEADER  */
 header ul {
   list-style: none;
   margin: 0;
@@ -102,8 +91,18 @@ header a {
   color: var(--color4);
 }
 
+p {
+  margin: 0.5rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
 .bigtitle {
-  margin: 1rem 2rem 1rem 2rem;
+  margin: 2rem 2rem 1rem 2rem;
   box-sizing: border-box;
   font-size: 4rem;
   height: 4rem;
@@ -169,7 +168,7 @@ a:visited {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 20;
+  z-index: 5;
   visibility: hidden;
 }
 
@@ -188,14 +187,25 @@ button {
 .col3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+}
+
+.col2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
 }
 
 .col {
   padding: 1rem 2rem 1rem 2rem;
 }
 
-.content {
+.content,
+article {
   margin: 1rem 4rem 1rem 4rem;
 }
 
@@ -217,104 +227,10 @@ button {
   margin: 1rem 0 1rem 0;
 }
 
-.contentholder {
-  display: grid;
-  grid-template-columns: calc(100% - 20rem) auto;
-  grid-template-rows: auto;
-  gap: 1rem;
-  margin: 1rem;
-  gap: 1rem;
-}
-
-.contentcards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 1rem;
-  margin: 1rem;
-  gap: 1rem;
-}
-
-.charimage {
-  border: 0;
-}
-
-.contentcards .grid :nth-child(odd) {
-  grid-template-columns: 1fr 2fr;
-}
-
-.contentcards .grid :nth-child(even) {
-  grid-template-columns: 2fr 1fr;
-}
-
-.charcard {
-  grid-column: span 2;
-}
-
 .imagescale {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.charname {
-  font-weight: 700;
-  font-size: 3rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  grid-column: span 2;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-
-.subchar {
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding-bottom: 0.5ch;
-}
-
-.drive {
-  margin: 0.5rem 0rem 0.5rem 1rem;
-  padding: 0.5rem 0rem 0.5rem 1rem;
-  border: 0.5px solid var(--color-light);
-  font-family: "Jost", sans-serif;
-  font-size: 1rem;
-}
-
-.drive::first-line {
-  font-weight: 900;
-}
-
-.charlink {
-  padding-top: 1rem;
-  text-align: right;
-}
-
-.charcardlist {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  column-gap: 1rem;
-  row-gap: 1ch;
-}
-
-.charcardlist2 {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-  column-gap: 1rem;
-  row-gap: 1ch;
-}
-
-.charchardlist:nth-child(3) {
-  /* grid-row: span 5; */
-  background-color: #4caf50;
-}
-
-.pic {
-  grid-row: span 4;
 }
 
 .collapsible {
@@ -342,119 +258,6 @@ button {
   overflow: hidden;
 }
 
-.detailcards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style: none;
-  gap: 1rem;
-  /* flex-wrap: wrap; */
-}
-
-/* .detailcards div::first-line {
-  display: block;
-  font-weight: 900;
-  font-size: 1.55rem;
-} */
-
-.detailcards div {
-  border: 0.5px solid black;
-  border-radius: 5px;
-  padding: 1ch;
-}
-
-.thumbnailgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-  column-gap: 0.5rem;
-  width: 15rem;
-  margin: 1rem;
-  align-items: start;
-  text-align: center;
-  font-family: "Jost", sans-serif;
-}
-.thumbnailgrid div {
-  padding-bottom: 1rem;
-}
-
-.thumbnailgrid div:hover {
-  background-color: var(--color-dark);
-}
-
-.thumbnailgrid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-  column-gap: 0.5rem;
-  width: 20rem;
-  margin: 1rem;
-  align-items: start;
-  text-align: center;
-  font-family: "Jost", sans-serif;
-}
-.thumbnailgrid2 div {
-  padding-bottom: 1rem;
-}
-
-.thumbnailgrid2 div:hover {
-  background-color: var(--color-dark);
-}
-.cardgallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 5rem 0 5rem;
-  padding: 2rem;
-  gap: 3rem;
-}
-
-.cardandsub {
-  width: 18rem;
-}
-
-.infocard {
-  width: 100%;
-  border: 12px solid var(--color-dark);
-  border-radius: 8px;
-  background-color: var(--background-color-shift);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.infocard:hover {
-  scale: 1.25;
-  transform-origin: bottom;
-  transition: all 0.2s ease-in-out;
-}
-
-.cardname {
-  font-weight: 700;
-  font-size: 1.5rem;
-  /* height: 3rem; */
-  margin: 0;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.cardsubtitle {
-  font-size: 1rem;
-  margin: 0;
-  height: 4rem;
-  /* padding: 1rem; */
-  text-align: center;
-}
-
-.cardimage {
-  width: 100%;
-  height: auto;
-}
-
-.cardblurb {
-  padding: 1rem;
-  width: 100%;
-}
-
 .showme {
   min-height: 2rem;
   min-width: 4rem;
@@ -466,11 +269,6 @@ button {
 }
 
 .monsterblock {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-  column-gap: 0.5rem;
   margin: 2rem;
   align-items: start;
   font-family: "Jost", sans-serif;
@@ -518,11 +316,6 @@ button {
 }
 
 .magicitem {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-  column-gap: 0.5rem;
   margin: 2rem;
   align-items: start;
   font-family: "Jost", sans-serif;
@@ -562,7 +355,112 @@ button {
   color: var(--color-dark);
 }
 
+/* UTILITY */
+.showme {
+  min-height: 2rem;
+  min-width: 4rem;
+  background-color: azure;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  padding: 1ch;
+  margin: 1ch;
+}
+
+/* MOBILE */
+
+@media (max-width: 991.98px) {
+  .bigtitle {
+    margin: 1ch;
+    box-sizing: border-box;
+    font-size: 3rem;
+    height: 3rem;
+  }
+
+  header li {
+    font-size: 1rem;
+    padding-right: 4px;
+    padding-left: 4px;
+
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 767.98px) {
+  .bigtitle {
+    margin: 1ch;
+    box-sizing: border-box;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 1ch;
+  }
+
+  article {
+    margin: 1ch;
+    padding: 1ch;
+  }
+  header {
+    height: 2rem;
+    background-color: var(--background-color-shift);
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    position: sticky;
+  }
+
+  header ul {
+    background-color: var(--color-dark);
+    z-index: 15;
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    top: 2rem;
+    left: 1ch;
+    flex-direction: column;
+  }
+
+  header li {
+    /* border: 1px solid yellow; */
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .col3,
+  .col2 {
+    display: block;
+    flex-direction: row;
+    gap: 1ch;
+    padding: 1ch;
+    margin: 1ch;
+  }
+
+  .col {
+    margin: 0;
+  }
+
+  .hamburger {
+    /* visibility: hidden; */
+    display: block;
+    cursor: pointer;
+    height: 2rem;
+  }
+
+  .overlay {
+    /* visibility: visible; */
+    z-index: 5;
+  }
+
+  .article,
+  .highlightbox,
+  .magicitem,
+  .monsterblock {
+    padding: 1ch 1ch 1ch 1ch;
+    width: 100%;
+  }
+
+  /* 
   header {
     padding: 0;
     margin: 0;
@@ -582,23 +480,39 @@ button {
   header .active {
     background-color: rgb(255, 255, 255, 0.2);
   }
-  main {
-    /* display: flex;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: 20px auto;
+
+  header {
+    font-family: "Nanum Myeongjo", serif;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px 60px;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 1rem;
+    top: 0;
+    left: 0;
     width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(22, 22, 22, 0.4);
+  }
+  
+  
+  header ul {
+    list-style: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-}
-
-@media (max-width: 991.98px) {
+  
   header li {
-    font-size: 1rem;
-    padding-right: 4px;
-    padding-left: 4px;
-
-    margin-left: 5px;
-  }
+    padding-right: 10px;
+    padding-left: 10px;
+  
+    margin-left: 20px; 
+  }*/
 }

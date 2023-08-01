@@ -4,7 +4,7 @@ const pageHeader = document.querySelector("header");
 const headerContent = ` 
 <div class="overlay"></div>
 <div class="hamburger">
-<img src="img/menu.png" class="menuburger" />
+<img src="assets/hamburger.png" class="menuburger" />
 </div>
 
 <ul id="navigator">

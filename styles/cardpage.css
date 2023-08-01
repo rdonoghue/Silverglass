@@ -1,0 +1,73 @@
+.cardgallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5rem 0 5rem;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.cardandsub {
+  width: 18rem;
+}
+
+.infocard {
+  width: 100%;
+  border: 12px solid var(--color-dark);
+  border-radius: 8px;
+  background-color: var(--background-color-shift);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.infocard:hover {
+  scale: 1.25;
+  transform-origin: bottom;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardname {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* height: 3rem; */
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cardsubtitle {
+  font-size: 1rem;
+  margin: 0;
+  height: 4rem;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.cardimage {
+  width: 100%;
+  height: auto;
+}
+
+.cardblurb {
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .cardgallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    padding: 0.5ch;
+    gap: 1ch;
+  }
+
+  .infocard:hover {
+    scale: 1;
+  }
+
+  .cardandsub {
+    width: 80%;
+    margin: auto;
+  }
+}

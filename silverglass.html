@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/mappage.css" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/contentpage.css" />
 
     <script src="scripts/makeheader.js" type="module" defer></script>
     <script src="scripts/shared.js" type="module" defer></script>
@@ -22,179 +22,308 @@
     <header></header>
     <div class="bigtitle">Streets of Silverglass: The City</div>
     <main>
-      <div class="mapholder">
-        <div class="content">
-          <img src="./assets/silverglass3000.png" class="gamemap" id="map" />
-          <h1 id="history">History</h1>
-          <p>Technically, it’s two cities - <b>The Grand Revived Free City of Sudlophor, Reborn in the Glory of the Everlasting Flame</b> to the west and <b>Novo Argentium</b> to the east. That’s a mouthful, and it is most commonly shortened to  Silverglass in reflection of the iconic towers that represent each city.  The cities lie on opposite sides of the straights that connect the Shining Sea to the "Lake" of Steam (Actually an inland saltwater sea).   Both are fairly young cities, built after the Lake of Steam's level rose back to it's previous levels, and while the geography of the area has changed, ruins from the old cities are a part of the landscape. </p>
-          <p> The western city, called "Fireside" by occupants unbound by formality, is nominally a free city ruled by its Sovereign  out of the multi-colored Tower of Glass.  In practice, it is accepted that the Sovereign is a puppet of the Skyfire Emirates, with just enough of a fig leaf of independence to provide the Emirates insulation from the consequences of their expansionist tendencies.   Fireside is divided into an inner and outer city.  The inner city is a genuine wonder, constructed by the many elementals "on loan" from the Emirates.   While it sees regular trade and traffic, the only permanent residents are those highly ranked - the Genasi, Greater genasi and highly ranked mortals.  Some Jinnfolk are also said to maintain residences in the city, but such matters are closely held secrets.  The outer city, beyond the gates, it rather less spectacular, and serves as a home for those below the  Pasha's and Beys of the Inner city. </p>
-          <p>There is a little more debate about how the eastern city, got the name "Silverside".  It is most commonly attributed to the <b>Silverlight</b>, an immense lighthouse, visible far out into the silver sea.  However, there is also a persistent rumor that The Protector is a disguised silver dragon.  If true, the Protector isn't being subtle about it, incorporating silver dragons into her coat of arms and the decorations of Silverhold.  While the Protector's informal authority goes largely unchallenged, the day to day ruling of the city lies in the hands of a council whose seats align with the factions and powers who sponsored the development of the city.  While these factions were unified in their desire to not hand control of the neck over to the Skyfire Emirates,  their politics do not otherwise tend to overlap.   </p>
-          
-          <h1>Fireside</h1>
-<p>
-  Class is of tremendous importance in Fireside, and the nature of class
-  strongly favors the Genasi. Within skyfire, the pecking order is:
-</p>
-<p>
-  At the top of all things, are the genie. They are the absolute rulers of the
-  Emirates, but even so, they are far from numerous. The simple truth is that
-  only so many genie are that interested in a relatively backwater world. The
-  genie themselves have an incredibly elaborate system of position and privilege
-  which changes and evolves over time. As this cycle changes, so does the
-  prevalence of different types of genie in the Emirates.
-</p>
-<p>
-  Within Fireside, the chief figure is the <b>Sovereign</b>, the enigmatic ruler
-  of the city whose identity is a closely guarded secret. Some even suspect that
-  the title changes hands with some frequency, based upon elemental politics,
-  but there's no proof to back up that suspicion. The Sovereign's title does not
-  exist in the Skyfire Emirates, but it equates to at least a very highly ranked
-  Pasha, though some suspect that the Sovereign is a genie in disguise
-</p>
-<p>
-  The next rank down are the <b>pasha</b>, sometimes called greater genasi.
-  Bloodline purity is of tremendous importance to many pasha, as it serves as a
-  measure of their proximity to genie-kind, and in turn, of their own
-  importance. Predictably, this means there is an elaborate pecking order among
-  the pasha which is a reflection of the politics among the genie. It is
-  possible for a prominent bey, or a powerful elemental ally to be recognized as
-  a pasha, and such figures are treated with respect for their personal power,
-  but they are towards the bottom of the overall pasha oeder of things. Still,
-  the least of the pasha still has access to more power and wealth than most can
-  dream of.
-</p>
-<p>
-  Beneath them are the <b>bey</b>, often viewed as the true 'citizens' of the
-  emirates, as they have many protected rights, including those of property
-  ownership. To be a bey is not the same guarantee of earthly success that being
-  a pasha is, but it still offers a substantial head start. The vast majority of
-  bey are genasi, and genasi blood is one path to guarantee bey status. A small
-  number of bey are non-genasi who have been rewarded for exceptional service.
-  Such bey are granted a plaque of office, and woe unto the bey who loses
-  theirs, for it will not be replaced.
-</p>
-<p>
-  Beneath the bey are the bulk of the population, the <b>nabob</b>. The is a
-  term generally used to describe all of those without elemental blood. While
-  the term is not an insult (and there absolutely are insulting version of it),
-  it's connotations are...not great.
-</p>
-<p>
-  Informally, the nabob are divided into man distinctions, the two most common
-  being <b>celeb</b> and <b>kir</b>. Celeb are those nabob who bring value to
-  the Emirates, such as skilled craftsmen or soldiers. Kir are those nabob who
-  are seen as a drain upon the emirates - that is to say, the poor and criminal
-  - and that term is absolutely an insult.
-</p>
+      <div class="content">
+        <img src="./assets/silverglass3000.png" class="imagescale" id="map" />
+        <h1 id="history">History</h1>
+        <p>
+          Technically, it’s two cities -
+          <b
+            >The Grand Revived Free City of Sudlophor, Reborn in the Glory of
+            the Everlasting Flame</b
+          >
+          to the west and <b>Novo Argentium</b> to the east. That’s a mouthful,
+          and it is most commonly shortened to Silverglass in reflection of the
+          iconic towers that represent each city. The cities lie on opposite
+          sides of the straights that connect the Shining Sea to the "Lake" of
+          Steam (Actually an inland saltwater sea). Both are fairly young
+          cities, built after the Lake of Steam's level rose back to it's
+          previous levels, and while the geography of the area has changed,
+          ruins from the old cities are a part of the landscape.
+        </p>
+        <p>
+          The western city, called "Fireside" by occupants unbound by formality,
+          is nominally a free city ruled by its Sovereign out of the
+          multi-colored Tower of Glass. In practice, it is accepted that the
+          Sovereign is a puppet of the Skyfire Emirates, with just enough of a
+          fig leaf of independence to provide the Emirates insulation from the
+          consequences of their expansionist tendencies. Fireside is divided
+          into an inner and outer city. The inner city is a genuine wonder,
+          constructed by the many elementals "on loan" from the Emirates. While
+          it sees regular trade and traffic, the only permanent residents are
+          those highly ranked - the Genasi, Greater genasi and highly ranked
+          mortals. Some Jinnfolk are also said to maintain residences in the
+          city, but such matters are closely held secrets. The outer city,
+          beyond the gates, it rather less spectacular, and serves as a home for
+          those below the Pasha's and Beys of the Inner city.
+        </p>
+        <p>
+          There is a little more debate about how the eastern city, got the name
+          "Silverside". It is most commonly attributed to the
+          <b>Silverlight</b>, an immense lighthouse, visible far out into the
+          silver sea. However, there is also a persistent rumor that The
+          Protector is a disguised silver dragon. If true, the Protector isn't
+          being subtle about it, incorporating silver dragons into her coat of
+          arms and the decorations of Silverhold. While the Protector's informal
+          authority goes largely unchallenged, the day to day ruling of the city
+          lies in the hands of a council whose seats align with the factions and
+          powers who sponsored the development of the city. While these factions
+          were unified in their desire to not hand control of the neck over to
+          the Skyfire Emirates, their politics do not otherwise tend to overlap.
+        </p>
 
+        <h1>Fireside</h1>
+        <p>
+          Class is of tremendous importance in Fireside, and the nature of class
+          strongly favors the Genasi. Within skyfire, the pecking order is:
+        </p>
+        <p>
+          At the top of all things, are the genie. They are the absolute rulers
+          of the Emirates, but even so, they are far from numerous. The simple
+          truth is that only so many genie are that interested in a relatively
+          backwater world. The genie themselves have an incredibly elaborate
+          system of position and privilege which changes and evolves over time.
+          As this cycle changes, so does the prevalence of different types of
+          genie in the Emirates.
+        </p>
+        <p>
+          Within Fireside, the chief figure is the <b>Sovereign</b>, the
+          enigmatic ruler of the city whose identity is a closely guarded
+          secret. Some even suspect that the title changes hands with some
+          frequency, based upon elemental politics, but there's no proof to back
+          up that suspicion. The Sovereign's title does not exist in the Skyfire
+          Emirates, but it equates to at least a very highly ranked Pasha,
+          though some suspect that the Sovereign is a genie in disguise
+        </p>
+        <p>
+          The next rank down are the <b>pasha</b>, sometimes called greater
+          genasi. Bloodline purity is of tremendous importance to many pasha, as
+          it serves as a measure of their proximity to genie-kind, and in turn,
+          of their own importance. Predictably, this means there is an elaborate
+          pecking order among the pasha which is a reflection of the politics
+          among the genie. It is possible for a prominent bey, or a powerful
+          elemental ally to be recognized as a pasha, and such figures are
+          treated with respect for their personal power, but they are towards
+          the bottom of the overall pasha oeder of things. Still, the least of
+          the pasha still has access to more power and wealth than most can
+          dream of.
+        </p>
+        <p>
+          Beneath them are the <b>bey</b>, often viewed as the true 'citizens'
+          of the emirates, as they have many protected rights, including those
+          of property ownership. To be a bey is not the same guarantee of
+          earthly success that being a pasha is, but it still offers a
+          substantial head start. The vast majority of bey are genasi, and
+          genasi blood is one path to guarantee bey status. A small number of
+          bey are non-genasi who have been rewarded for exceptional service.
+          Such bey are granted a plaque of office, and woe unto the bey who
+          loses theirs, for it will not be replaced.
+        </p>
+        <p>
+          Beneath the bey are the bulk of the population, the <b>nabob</b>. The
+          is a term generally used to describe all of those without elemental
+          blood. While the term is not an insult (and there absolutely are
+          insulting version of it), it's connotations are...not great.
+        </p>
+        <p>
+          Informally, the nabob are divided into man distinctions, the two most
+          common being <b>celeb</b> and <b>kir</b>. Celeb are those nabob who
+          bring value to the Emirates, such as skilled craftsmen or soldiers.
+          Kir are those nabob who are seen as a drain upon the emirates - that
+          is to say, the poor and criminal - and that term is absolutely an
+          insult.
+        </p>
 
-<h2 id="#bomo">Bomo</h2>
-<p>If a visitor has come to Fireside, they have come to see Bomo, a renown center of arts, music, crafts, food and theater</p>
-          <h2 id="#cistern">Cistern</h2>
-          <p>Named for the towering water supply for the city, this neighborhood is populated primarily by the Beys of the city.</p>
-          <h2 id="#fishbone">Fishbone</h2>
-          <p>A robust fish harbor that provides much of the food for Fireside. Populated by Nabob, the smell of fish is still better than the smell of the Garden.</p>
+        <h2 id="#bomo">Bomo</h2>
+        <p>
+          If a visitor has come to Fireside, they have come to see Bomo, a
+          renown center of arts, music, crafts, food and theater
+        </p>
+        <h2 id="#cistern">Cistern</h2>
+        <p>
+          Named for the towering water supply for the city, this neighborhood is
+          populated primarily by the Beys of the city.
+        </p>
+        <h2 id="#fishbone">Fishbone</h2>
+        <p>
+          A robust fish harbor that provides much of the food for Fireside.
+          Populated by Nabob, the smell of fish is still better than the smell
+          of the Garden.
+        </p>
 
-          <h2 id="#firewall">Firewall</h2>
-          <p>Surrounded by the eponymous wall, this incredibly exclusive neighborhood is the Domain of the Sovereign and their most favored pashas.</p>
-          <h2 id="#garden">The Garden</h2>
-          <p>Cramped, chaotic, rich and wretched in equal parts, this is the neighborhood where most of the cities nabob are forced to live.</p>
-          <h2 id="#koyun">Koyun</h2>
-          <p>Well maintained grasslands where the rotating nomad tribes camp while trading with the city.</p>
+        <h2 id="#firewall">Firewall</h2>
+        <p>
+          Surrounded by the eponymous wall, this incredibly exclusive
+          neighborhood is the Domain of the Sovereign and their most favored
+          pashas.
+        </p>
+        <h2 id="#garden">The Garden</h2>
+        <p>
+          Cramped, chaotic, rich and wretched in equal parts, this is the
+          neighborhood where most of the cities nabob are forced to live.
+        </p>
+        <h2 id="#koyun">Koyun</h2>
+        <p>
+          Well maintained grasslands where the rotating nomad tribes camp while
+          trading with the city.
+        </p>
 
-          <h2 id="#market">The Market</h2>
-          <p>Center of trade in Fireside, it is a good place to watch your wallet and your back.</p>         
-          <h2 id="#maze">The Maze</h2>
-          <p>Used by the sovereign for gruesome punishments, it is known to ignore the sounds the come from within.  Tellingly, the only good view of what happens in the maze is from the Tower of Glass.</p>
-          <h2 id="#sirki">Sirki</h2>
-          <p>Elite neighborhood of the pasha.  usually quiet and serene, The neighborhood becomes quite lively on arena days.</p>
-          <h2 id="#glasstower">Tower of Glass</h2>
-          <p>An immense tower which appears to be made of a single piece of multicolored glass which shifts over time.  Home to the sovereign and the city administration.</p>
-          
+        <h2 id="#market">The Market</h2>
+        <p>
+          Center of trade in Fireside, it is a good place to watch your wallet
+          and your back.
+        </p>
+        <h2 id="#maze">The Maze</h2>
+        <p>
+          Used by the sovereign for gruesome punishments, it is known to ignore
+          the sounds the come from within. Tellingly, the only good view of what
+          happens in the maze is from the Tower of Glass.
+        </p>
+        <h2 id="#sirki">Sirki</h2>
+        <p>
+          Elite neighborhood of the pasha. usually quiet and serene, The
+          neighborhood becomes quite lively on arena days.
+        </p>
+        <h2 id="#glasstower">Tower of Glass</h2>
+        <p>
+          An immense tower which appears to be made of a single piece of
+          multicolored glass which shifts over time. Home to the sovereign and
+          the city administration.
+        </p>
 
-          <h2 id="#firebeyond">Beyond</h2>
-          <p><b>The Orchards:</b> Fruit orchards maintained by the city and worked by Nabob laborers.</p>
-          <p><b>Siva:</b> A small town that has grown up around the narrowest part of the neck, fueled by ferry traffic with Tarton.</p>
-          <h2 id="#fireorgs">Organizations</h2>
-          <p><b>The Koru</b> - Fireside does not have a dedicated police organization, and they partner with Silverside's Hunter's Guild for most such responsibilities, but they also rely on a collection of animated statues, called "Koru", who tirelessly patrol the streets of the city.  While their routes are largely planned out, the are varied enough to keep from being too predictable, and the koru posess enough intelligence and initiaitve to mix things up a little. This intelligence also allows them to answer simple question, provide directions and generally be helpful.</p>
-          <p>The exact mechanics behind the Koru are a mystery, though it's understood that they respond to the Soveriegn's command.  They also speak with a single voice in a manner that suggests they may share some amount of awareness.</p>
-          <p>There is a small administrative group responsible for the upkeep and maintenence of the Koru, and it includes a small number of "Koru" officers, who have the authority to order units of Koru in situations which merit a better understanding.</p>
-          <h1>Silverside</h1>
-          <p>While Silverside is more of a free city than Fireside, that is not a result of a lack of outside influence so much as it is a lack of agreement among those outside influences.  The council which rules the city represents interests from Tethyr, The Border Kingdome, The Steamlake Alliance, Chult and (nominally) Halruua, with other minor powers have presences as well.  The presence of the city itself is almost an afterthought.</p>
-          <p>While this is not the most stable of situations, it's driven by the necessity that Novo Argentium remain a genuinely free city - should any one councilmember take too strong a position, the expectation is that the Emirates would seize upon this "imperial aggression" and take it upon themselves to "liberate" the city. </p>
-          Beacon: 
+        <h2 id="#firebeyond">Beyond</h2>
+        <p>
+          <b>The Orchards:</b> Fruit orchards maintained by the city and worked
+          by Nabob laborers.
+        </p>
+        <p>
+          <b>Siva:</b> A small town that has grown up around the narrowest part
+          of the neck, fueled by ferry traffic with Tarton.
+        </p>
+        <h2 id="#fireorgs">Organizations</h2>
+        <p>
+          <b>The Koru</b> - Fireside does not have a dedicated police
+          organization, and they partner with Silverside's Hunter's Guild for
+          most such responsibilities, but they also rely on a collection of
+          animated statues, called "Koru", who tirelessly patrol the streets of
+          the city. While their routes are largely planned out, the are varied
+          enough to keep from being too predictable, and the koru posess enough
+          intelligence and initiaitve to mix things up a little. This
+          intelligence also allows them to answer simple question, provide
+          directions and generally be helpful.
+        </p>
+        <p>
+          The exact mechanics behind the Koru are a mystery, though it's
+          understood that they respond to the Soveriegn's command. They also
+          speak with a single voice in a manner that suggests they may share
+          some amount of awareness.
+        </p>
+        <p>
+          There is a small administrative group responsible for the upkeep and
+          maintenence of the Koru, and it includes a small number of "Koru"
+          officers, who have the authority to order units of Koru in situations
+          which merit a better understanding.
+        </p>
+        <h1>Silverside</h1>
+        <p>
+          While Silverside is more of a free city than Fireside, that is not a
+          result of a lack of outside influence so much as it is a lack of
+          agreement among those outside influences. The council which rules the
+          city represents interests from Tethyr, The Border Kingdome, The
+          Steamlake Alliance, Chult and (nominally) Halruua, with other minor
+          powers have presences as well. The presence of the city itself is
+          almost an afterthought.
+        </p>
+        <p>
+          While this is not the most stable of situations, it's driven by the
+          necessity that Novo Argentium remain a genuinely free city - should
+          any one councilmember take too strong a position, the expectation is
+          that the Emirates would seize upon this "imperial aggression" and take
+          it upon themselves to "liberate" the city.
+        </p>
+        Beacon: The Docks: Milton: the wood that comes down the river from the
+        cut is processed in Milton. If the name doesn't make it clear, there are
+        a lot of mills here Riverside: If you don't have the money to live in
+        Beacon, don't have business in the docs, and don't feel like chopping
+        down trees, you're likely to end up in Riverside. Wall Market:
+        Originally an informal market created to avoid taxes, it's become a
+        fixture of the city and the hub of land-based trade. Silvergard: Tarton:
+        A small town that has grown up around the ferry to Siva.
 
-        
-          
-          The Docks: 
-          
-          Milton: the wood that comes down the river from the cut is processed in Milton.  If the name doesn't make it clear, there are a lot of mills here
-          
-          Riverside: If you don't have the money to live in Beacon, don't have business in the docs, and don't feel like chopping down trees, you're likely to end up in Riverside.
-          
-          Wall Market: Originally an informal market created to avoid taxes, it's become a fixture of the city and the hub of land-based trade.
-          
-          Silvergard: 
-          
-          Tarton: A small town that has grown up around the ferry to Siva.
-          
-  
+        <h2 id="#beacon">Beacon</h2>
+        <p>This is the nice neighborhood. Where the shiny people live.</p>
+        <h2 id="#docks">Docks</h2>
+        <p>Predictable hub of trade and other dockish things.</p>
+        <h2 id="#milton">Milton</h2>
+        <p>
+          The wood that comes down the river from the cut is processed in
+          Milton. If the name doesn't make it clear, there are a lot of mills
+          here
+        </p>
+        <h2 id="#riverside">Riverside</h2>
+        <p>
+          If you don't have the money to live in Beacon, don't have business in
+          the docsk, and don't feel like chopping down trees, you're likely to
+          end up in Riverside.
+        </p>
+        <h2 id="#wall">Wall</h2>
+        <p>
+          The original Wall Market sprung up outside the gates as an informal
+          market created to avoid taxes. Since then, it's become a fixture of
+          the city and the hub of land-based trade, and people have recently
+          started talking in terms of the district, not just the market.
+        </p>
+        <h2 id="#silvergard">Silvergard</h2>
+        <p>
+          A truly defensible fortress, and the personal domain of The Protector,
+          who generously loans its use to the council.
+        </p>
+        <h2 id="#silverbyond">Beyond</h2>
+        <p>
+          <b>The Cut: </b> Numerous lumber camps and small towns fill the forest
+          - each one has a name and a story, but to the people of Silverside,
+          they're all just The Cut.
+        </p>
+        <p>
+          <b>Tarton: </b> A small town has grown up around this ferry dock at
+          the narrowest part of the neck. It's an open secret that the ferry
+          traffic is mostly smuggling of one sort or another.
+        </p>
 
-          <h2 id="#beacon">Beacon</h2>
-          <p>This is the nice neighborhood.  Where the shiny people live.</p>
-          <h2 id="#docks">Docks</h2>
-          <p>Predictable hub of trade and other dockish things.</p>
-          <h2 id="#milton">Milton</h2>
-          <p>The wood that comes down the river from the cut is processed in Milton.  If the name doesn't make it clear, there are a lot of mills here</p>
-          <h2 id="#riverside">Riverside</h2>
-          <p>If you don't have the money to live in Beacon, don't have business in the docsk, and don't feel like chopping down trees, you're likely to end up in Riverside.
-          </p>
-          <h2 id="#wall">Wall</h2>
-          <p>The original Wall Market sprung up outside the gates as an informal market created to avoid taxes. Since then, it's become a fixture of the city and the hub of land-based trade, and people have recently started talking in terms of the district, not just the market.</p>
-          <h2 id="#silvergard">Silvergard</h2>
-          <p>A truly defensible fortress, and the personal domain of The Protector, who generously loans its use to the council.</p>
-          <h2 id="#silverbyond">Beyond</h2>
-          <p><b>The Cut: </b> Numerous lumber camps and small towns fill the forest - each one has a name and a story, but to the people of Silverside, they're all just The Cut.</p>
-          <p><b>Tarton: </b>   A small town has grown up around this ferry dock at the narrowest part of the neck.  It's an open secret that the ferry traffic is mostly smuggling of one sort or another.</p>
-      
-          <h2 id="#silverorgs">Organizations</h2>
-          <p>Blank</p>
-        </div>
-
-        <div class="tocholder">
-          <div class="toc">
-            <h3><a href="#overview">Overview</a></h3>
-            <h3><a href="#fireside">Fireside</a></h3>
-            <ul>
-
-              <li><a href="#bomo">Bomo</a></li>
-              <li><a href="#cistern">Cistern</a></li>
-              <li><a href="#firewall">Firewall</a></li>
-              <li><a href="#fishbone">Fishbone</a></li>
-              <li><a href="#garden">The Garden</a></li>
-              <li><a href="#koyun">Koyun</a></li>
-              <li><a href="#market">The Market</a></li>
-              <li><a href="#maze">The Maze</a></li>
-              <li><a href="#sirki">Sirki</a></li>
-              <li><a href="#glasstower">Tower of Glass</a></li>
-              <li><a href="#firebeyond">Beyond</a></li>
-              <li><a href="#fireorgs">Organizations</a></li>
-            </ul>
-            <h3><a href="#silverside">Silverside</a></h3>
-            <ul>
-
-              <li><a href="#beacon">Beacon</a></li>
-              <li><a href="#docks">Docks</a></li>
-              <li><a href="#milton">Milton</a></li>
-              <li><a href="#riverside">Riverside</a></li>
-              <li><a href="#silvergard">Silvergard</a></li>
-              <li><a href="#wall">Wall</a></li>
-              <li><a href="#silverbyond">Beyond</a></li>
-              <li><a href="#silverorgs">Organizations</a></li>
-            </ul>
-          </div>
-        </div>
+        <h2 id="#silverorgs">Organizations</h2>
+        <p>Blank</p>
       </div>
+
+      <nav class="tocholder">
+        <div class="toc">
+          <h3><a href="#overview">Overview</a></h3>
+          <h3><a href="#fireside">Fireside</a></h3>
+          <ul>
+            <li><a href="#bomo">Bomo</a></li>
+            <li><a href="#cistern">Cistern</a></li>
+            <li><a href="#firewall">Firewall</a></li>
+            <li><a href="#fishbone">Fishbone</a></li>
+            <li><a href="#garden">The Garden</a></li>
+            <li><a href="#koyun">Koyun</a></li>
+            <li><a href="#market">The Market</a></li>
+            <li><a href="#maze">The Maze</a></li>
+            <li><a href="#sirki">Sirki</a></li>
+            <li><a href="#glasstower">Tower of Glass</a></li>
+            <li><a href="#firebeyond">Beyond</a></li>
+            <li><a href="#fireorgs">Organizations</a></li>
+          </ul>
+          <h3><a href="#silverside">Silverside</a></h3>
+          <ul>
+            <li><a href="#beacon">Beacon</a></li>
+            <li><a href="#docks">Docks</a></li>
+            <li><a href="#milton">Milton</a></li>
+            <li><a href="#riverside">Riverside</a></li>
+            <li><a href="#silvergard">Silvergard</a></li>
+            <li><a href="#wall">Wall</a></li>
+            <li><a href="#silverbyond">Beyond</a></li>
+            <li><a href="#silverorgs">Organizations</a></li>
+          </ul>
+        </div>
+      </nav>
     </main>
   </body>
 </html>
