@@ -62,13 +62,13 @@ padding: 0;
 }
 
 .drive {
-  margin: 1rem 0rem 0.5rem 0rem;
+  margin: 2rem 0rem 0.5rem 0rem;
   padding: 1rem;
 /*  padding: 0.5rem 0rem 0.5rem 0rem; */
   border: 0.5px solid var(--color-light);
   font-family: "Jost", sans-serif;
   font-size: 1rem;
-  min-height: 10rem;
+/*  min-height: 15rem; */
 }
 
 .drive::first-line {
