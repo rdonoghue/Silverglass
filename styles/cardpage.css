@@ -9,14 +9,17 @@
 
 .cardandsub {
   width: 18rem;
+  border: 2px solid yellow;
 }
 
 .infocard {
   width: 100%;
+  box-sizing: border-box;
   border: 12px solid var(--color-dark);
   border-radius: 8px;
   background-color: var(--background-color-shift);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
 .infocard:hover {
@@ -50,6 +53,7 @@
 .cardblurb {
   padding: 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 767.98px) {
