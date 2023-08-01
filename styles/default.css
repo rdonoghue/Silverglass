@@ -43,7 +43,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 15px 60px;
+/*  padding: 15px 60px; */
   align-items: center;
   justify-content: space-between;
   /* position: absolute; */
