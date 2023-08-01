@@ -170,6 +170,7 @@ padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    width: 100%;
     align-items: center;
   }
 
