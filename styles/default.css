@@ -102,10 +102,11 @@ ul {
 }
 
 .bigtitle {
-  margin: 2rem 2rem 1rem 2rem;
+  margin: 2rem auto;
   box-sizing: border-box;
   font-size: 4rem;
   height: 4rem;
+width: 90%;
 }
 
 h1,
@@ -148,8 +149,8 @@ a:visited {
   cursor: pointer;
 }
 .menuburger {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .hidden {
@@ -390,10 +391,11 @@ article {
   .bigtitle {
     /* display: flex; */
     margin: 0 auto;
-    padding: 0.25ch auto;
+    padding: 0;
     font-size: 1.5rem;
     height: auto;
     text-align: center;
+    width: 90%
     /* justify-content: center; */
     /* overflow: auto; */
   }
