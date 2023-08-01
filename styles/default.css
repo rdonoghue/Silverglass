@@ -156,35 +156,6 @@ a:visited {
   flex-direction: column;
 }
 
-.hamburger {
-  /* visibility: hidden; */
-  display: none;
-  cursor: pointer;
-}
-.menuburger {
-  height: 3rem;
-  width: 3rem;
-}
-
-.hidden {
-  display: none;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  /* bottom: 0; */
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 5;
-  visibility: hidden;
-}
 
 button {
   cursor: pointer;
@@ -378,6 +349,38 @@ button {
 }
 
 /* MOBILE */
+
+.hamburger {
+  /* visibility: hidden; */
+  display: none;
+  cursor: pointer;
+}
+.menuburger {
+/*  height: 2.5rem;
+  width: 2.5rem; */
+  padding: 0.5ch;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  visibility: hidden;
+}
+
 
 @media (max-width: 991.98px) {
   .bigtitle {
