@@ -35,6 +35,12 @@ b {
   color: var(--color3);
 }
 
+main {
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
 /* HEADER  */
 
 header {
@@ -463,8 +469,7 @@ article {
   .article,
   .highlightbox,
   .magicitem,
-  .monsterblock,
-  main {
+  .monsterblock {
     padding: 1ch 1ch 1ch 1ch;
     width: 100%;
   }
