@@ -198,6 +198,12 @@ button {
 .tocholder {
   border: 0;
 }
+
+.h2toc {
+  text-indent: 1rem;
+  list-style-type: none;
+}
+
 .highlightbox {
   font-family: "Jost", sans-serif;
   display: block;

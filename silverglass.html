@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="styles/contentpage.css" />
 
     <script src="scripts/makeheader.js" type="module" defer></script>
+    <script src="scripts/maketoc.js" type="module" defer></script>
+    <script src="scripts/shared.js" type="module" defer></script>
+
+    <script
+      src="scripts/maketoc.js"
+      type="module"
+      data-depth="2"
+      defer
+    ></script>
     <script src="scripts/shared.js" type="module" defer></script>
   </head>
   <body tag="amber">
@@ -294,35 +303,7 @@
       </div>
 
       <nav class="tocholder">
-        <div class="toc">
-          <h3><a href="#overview">Overview</a></h3>
-          <h3><a href="#fireside">Fireside</a></h3>
-          <ul>
-            <li><a href="#bomo">Bomo</a></li>
-            <li><a href="#cistern">Cistern</a></li>
-            <li><a href="#firewall">Firewall</a></li>
-            <li><a href="#fishbone">Fishbone</a></li>
-            <li><a href="#garden">The Garden</a></li>
-            <li><a href="#koyun">Koyun</a></li>
-            <li><a href="#market">The Market</a></li>
-            <li><a href="#maze">The Maze</a></li>
-            <li><a href="#sirki">Sirki</a></li>
-            <li><a href="#glasstower">Tower of Glass</a></li>
-            <li><a href="#firebeyond">Beyond</a></li>
-            <li><a href="#fireorgs">Organizations</a></li>
-          </ul>
-          <h3><a href="#silverside">Silverside</a></h3>
-          <ul>
-            <li><a href="#beacon">Beacon</a></li>
-            <li><a href="#docks">Docks</a></li>
-            <li><a href="#milton">Milton</a></li>
-            <li><a href="#riverside">Riverside</a></li>
-            <li><a href="#silvergard">Silvergard</a></li>
-            <li><a href="#wall">Wall</a></li>
-            <li><a href="#silverbyond">Beyond</a></li>
-            <li><a href="#silverorgs">Organizations</a></li>
-          </ul>
-        </div>
+        <div class="toc"><ul class="autoToc" data-depth="2"></ul></div>
       </nav>
     </main>
   </body>
