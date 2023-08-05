@@ -15,6 +15,9 @@ const headerContent = `
 <li><a href="pcs.html">Characters</a></li>
 <li><a href="npcs.html">People of Note</a></li>
 <li><a href="notes.html">Notes and Rulings</a></li>
+</ul>
+<div class="totop"><a href="#top">Back to Top</a><div>
+
 `;
 
 makeHeader();
